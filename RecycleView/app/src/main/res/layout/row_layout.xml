@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tx_country_name"
+        android:text="Ghana"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tx_capital_name"
+        android:text="Accra"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/tx_country_name"
+
+        />
+
+
+</RelativeLayout>
