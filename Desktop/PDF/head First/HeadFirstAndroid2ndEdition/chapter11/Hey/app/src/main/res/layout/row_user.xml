@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/cardview_light_background"
+    android:clickable="true"
+    app:cardElevation="5dp"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Username"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/githublink1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="5dp"
+            android:text="Location"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/githublink1"
+            android:layout_marginTop="5dp"
+            android:text="Time"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:textStyle="italic"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorAccent"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

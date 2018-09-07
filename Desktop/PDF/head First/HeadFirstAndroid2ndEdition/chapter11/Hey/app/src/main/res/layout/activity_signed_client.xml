@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_travel_register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/register_travel_transparent_background"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/clientField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:ems="10"
+            android:hint="Full name..."
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/clientField"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+            android:ems="10"
+            android:hint="Email..."
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/locationField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/emailField"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_my_location_black_24dp"
+            android:ems="10"
+            android:hint="Location..."
+            android:inputType="textPersonName"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/phoneField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/locationField"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:ems="10"
+            android:hint="Phone number..."
+            android:inputType="phone"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/phoneField"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_power_input_black_24dp"
+            android:ems="10"
+            android:hint="Street name..."
+            android:inputType="textPostalAddress"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/street"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:ems="10"
+            android:hint="House number..."
+            android:inputType="textPostalAddress"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/gps_coordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/house"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_add_location_black_24dp"
+            android:ems="10"
+            android:hint="Gps coordinates..."
+            android:inputType="phone"
+            android:padding="15dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/signUpClientbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:text="Sign Up"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
